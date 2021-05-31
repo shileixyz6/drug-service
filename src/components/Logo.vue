@@ -23,7 +23,7 @@ export default {
   }
   #logo-1 {
     position: relative;
-    left: 9%;
+    left: 11%;
     top: 30px;
   }
 </style>

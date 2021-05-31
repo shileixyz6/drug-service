@@ -1,31 +1,27 @@
 <template>
   <div id="nav-menu">
-    <div class="menu">
-      <div id="menu-1">
-        <a>首页</a>
-      </div>
-      <div id="menu-2">
-        <a>工作动态</a>
-      </div>
-      <div id="menu-3">
-        <a>行业报告信息</a>
-      </div>
-      <div id="menu-4">
-        <a>药品短缺清单</a>
-      </div>
-      <div id="menu-5">
-        <a>药企停产信息</a>
-      </div>
-      <div id="menu-6">
-        <a>协同联络单位</a>
-      </div>
+    <div id="nav-menu-1">
+      <ul id="menu">
+        <li><router-link to="/homePage">首页</router-link></li>
+        <li><router-link to="/workDynamic">工作动态</router-link></li>
+        <li><router-link to="/reportInfo">行业报告信息</router-link></li>
+        <li><router-link to="/shortageList">药品短缺清单</router-link></li>
+        <li><router-link to="/discontinuedInfo">药企停产信息</router-link></li>
+        <li><router-link to="/contactUnit">协同联络单位</router-link></li>
+      </ul>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Menu'
+  name: 'Menu',
+  dada () {
+    return {
+    }
+  },
+  methods: {
+  }
 }
 </script>
 
@@ -33,18 +29,23 @@ export default {
   #nav-menu {
     position: relative;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     width: 100%;
     height: 58px;
     background-color: #2B5AAA;
   }
-  .menu {
+  #nav-menu-1 {
     position: relative;
     display: flex;
+    align-items: center;
+    width: 1300px;
+  }
+  #menu {
+    position: relative;
+    display: flex;
+    align-items: center;
     flex-direction: row;
-    justify-content: space-evenly;
-    left: 5%;
-    top: 15px;
+    justify-content: space-around;
     height: 25px;
     width: 90%;
     font-family: PingFangSC-Regular;
@@ -52,5 +53,6 @@ export default {
     color: #FFFFFF;
     text-align: center;
     font-weight: 400;
+    list-style-type: none;
   }
 </style>

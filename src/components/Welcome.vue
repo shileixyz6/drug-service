@@ -34,7 +34,7 @@ export default {
   }
   #welcome-msg {
     position: relative;
-    left: 9%;
+    left: 11%;
     width: 180px;
     height: 12px;
     font-family: PingFangSC-Regular;
@@ -46,7 +46,7 @@ export default {
   }
   #user-avatar {
     position: relative;
-    left: 1000px;
+    left: 70%;
     top: 6px;
     width: 20px;
     height: 20px;
@@ -56,7 +56,7 @@ export default {
   #name {
     position: relative;
     display: flex;
-    left: 1009px;
+    left: 71%;
     top: 8px;
     width: 28px;
     height: 20px;

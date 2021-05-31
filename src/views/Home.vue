@@ -48,6 +48,9 @@ export default {
     background-color: #42b983;
   }
   .main {
+    position: relative;
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 134px;
     background-color: #f2f2f2;
