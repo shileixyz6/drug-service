@@ -9,9 +9,9 @@
       </div>
       <div id="home-page-2-2">
         <div id="home-page-2-2-1">
-          <span>工作</span>
-          <span>动态</span>
-          <span>更多>></span>
+          <span id="work">工作</span>
+          <span id="dynamic">动态</span>
+          <span id="more">更多>></span>
         </div>
         <div id="home-page-2-2-2">
           <div id="home-page-2-2-2-1">
@@ -104,10 +104,17 @@ export default {
     height: 384px;
     background: #FFFFFF;
   }
+  #home-page-2-2-1 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    top: 10px;
+  }
   #home-page-2-2-2 {
     position: relative;
     display: flex;
     flex-direction: row;
+    top: 11px;
   }
   #home-page-2-2-2-1 {
     width: 76px;
@@ -160,5 +167,32 @@ export default {
     width: 386px;
     height: 330px;
     background: #FFFFFF;
+  }
+  #work {
+    width: 36px;
+    height: 25px;
+    font-family: Helvetica;
+    font-size: 18px;
+    color: #1A65B9;
+    text-align: center;
+    font-weight: 400;
+  }
+  #dynamic {
+    width: 26px;
+    height: 18px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #333333;
+    text-align: center;
+    font-weight: 400;
+  }
+  #more {
+    width: 39px;
+    height: 17px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #333333;
+    text-align: center;
+    font-weight: 400;
   }
 </style>

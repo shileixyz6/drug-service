@@ -1,21 +1,36 @@
 <template>
   <div id="work-dynamic-list">
     <ul id="list">
-      <li><span>关于第二批短缺药品信息的公示</span></li>
-      <li><span>关于印发国家短缺药品清单的通知</span></li>
-      <li><span>关于第一批短缺药品的信息公示</span></li>
-      <li><span>关于第二批短缺药品信息的公示</span></li>
-      <li><span>关于印发国家短缺药品清单的通知</span></li>
-      <li><span>关于第一批短缺药品的信息公示</span></li>
-      <li><span>关于第二批短缺药品信息的公示</span></li>
-      <li><span>关于印发国家短缺药品清单的通知</span></li>
+      <li v-for="item in workTitleList" :key="item"><WorkTitle :title=item.title :date="item.date"></WorkTitle></li>
     </ul>
   </div>
 </template>
 
 <script>
+import WorkTitle from '@/components/WorkTitle'
 export default {
-  name: 'WorkDynamicList'
+  name: 'WorkDynamicList',
+  components: {
+    WorkTitle
+  },
+  data () {
+    return {
+      workTitleList: [
+        { date: '2021-06-10', title: '关于第二批短缺药品信息的公示' },
+        { date: '2021-06-10', title: '关于第二批短缺药品信息的公示' },
+        { date: '2021-06-10', title: '关于第二批短缺药品信息的公示' },
+        { date: '2021-06-10', title: '关于第二批短缺药品信息的公示' },
+        { date: '2021-06-10', title: '关于第二批短缺药品信息的公示' },
+        { date: '2021-06-10', title: '关于第二批短缺药品信息的公示' },
+        { date: '2021-06-10', title: '关于第二批短缺药品信息的公示' },
+        { date: '2021-06-10', title: '关于第二批短缺药品信息的公示' }
+      ]
+    }
+  },
+  created () {
+  },
+  methods: {
+  }
 }
 </script>
 
@@ -25,6 +40,9 @@ export default {
     display: flex;
   }
   #list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     list-style-type: none;
   }
 </style>
