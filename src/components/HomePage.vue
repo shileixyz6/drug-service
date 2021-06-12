@@ -108,7 +108,7 @@ export default {
     position: relative;
     display: flex;
     flex-direction: row;
-    top: 10px;
+    top: 15px;
   }
   #home-page-2-2-2 {
     position: relative;
@@ -117,11 +117,19 @@ export default {
     top: 11px;
   }
   #home-page-2-2-2-1 {
+    position: relative;
+    display: flex;
+    left: 25px;
+    top: 10px;
     width: 76px;
     height: 1px;
     background: #1A65B9;
   }
   #home-page-2-2-2-2 {
+    position: relative;
+    display: flex;
+    left: 20px;
+    top: 10px;
     width: 266px;
     height: 1px;
     background: #D8D8D8;
@@ -169,6 +177,8 @@ export default {
     background: #FFFFFF;
   }
   #work {
+    position: relative;
+    left: 25px;
     width: 36px;
     height: 25px;
     font-family: Helvetica;
@@ -178,6 +188,9 @@ export default {
     font-weight: 400;
   }
   #dynamic {
+    position: relative;
+    left: 30px;
+    top: 3px;
     width: 26px;
     height: 18px;
     font-family: PingFangSC-Regular;
@@ -187,8 +200,10 @@ export default {
     font-weight: 400;
   }
   #more {
-    width: 39px;
-    height: 17px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    left: 250px;
     font-family: PingFangSC-Regular;
     font-size: 12px;
     color: #333333;

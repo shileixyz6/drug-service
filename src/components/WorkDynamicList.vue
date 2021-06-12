@@ -38,11 +38,13 @@ export default {
   #work-dynamic-list {
     position: relative;
     display: flex;
+    top: 8px;
   }
   #list {
     position: relative;
     display: flex;
     flex-direction: column;
     list-style-type: none;
+    padding-left: 10px;
   }
 </style>

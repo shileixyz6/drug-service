@@ -18,6 +18,7 @@ export default {
     position: relative;
     display: flex;
     flex-direction: row;
+    margin: 10px;
   }
   #icon {
     width: 8px;
@@ -25,6 +26,9 @@ export default {
     color: #595A64;
   }
   #title {
+    position: relative;
+    display: flex;
+    left: 15px;
     width: 225px;
     height: 21px;
     font-family: PingFangSC-Regular;
@@ -33,6 +37,8 @@ export default {
     font-weight: 400;
   }
   #date {
+    position: relative;
+    left: 32px;
     width: 78px;
     height: 18px;
     font-family: PingFangSC-Regular;
