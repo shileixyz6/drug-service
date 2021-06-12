@@ -70,7 +70,9 @@
       <img src="../assets/首页-banner2.png">
     </div>
     <div id="home-page-4">
-      <div id="home-page-4-1"></div>
+      <div id="home-page-4-1">
+        <img src="../assets/行业报告-icon.png">
+      </div>
       <div id="home-page-4-2">
         <div>
           <img src="../assets/行业报告.png">
@@ -312,10 +314,17 @@ export default {
     height: 374px;
     background: #FFFFFF;
   }
+  #home-page-4-1 {
+    position: relative;
+    left: 479px;
+    top: 15px;
+    width: 241px;
+    height: 51px;
+  }
   #home-page-4-2 {
     position: relative;
     display: flex;
-    top: 85px;
+    top: 30px;
     flex-direction: row;
     justify-content: space-evenly;
   }
