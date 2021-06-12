@@ -1,7 +1,7 @@
 <template>
   <div id="home-page">
     <div id="home-page-1">
-      <img src="../assets/home-banner.png"/>
+      <button id="button">点击进去>></button>
     </div>
     <div id="home-page-2">
       <div id="home-page-2-1">
@@ -78,7 +78,6 @@ export default {
     display: flex;
     flex-direction: column;
     width: 1200px;
-    /*height: auto;*/
   }
   #home-page-1 {
     position: relative;
@@ -86,6 +85,21 @@ export default {
     top: 18px;
     width: 1200px;
     height: 100px;
+    background-image: url('../assets/home-banner.png');
+  }
+  #button {
+    position: relative;
+    left: 475px;
+    top: 50px;
+    width: 85px;
+    height: 21px;
+    background: #1A65B9;
+    border-radius: 105px;
+    border: none;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #FFFFFF;
+    font-weight: 400;
   }
   #home-page-2 {
     position: relative;
@@ -121,16 +135,16 @@ export default {
     display: flex;
     left: 25px;
     top: 10px;
-    width: 76px;
+    width: 70px;
     height: 1px;
     background: #1A65B9;
   }
   #home-page-2-2-2-2 {
     position: relative;
     display: flex;
-    left: 20px;
+    left: 28px;
     top: 10px;
-    width: 266px;
+    width: 264px;
     height: 1px;
     background: #D8D8D8;
   }
