@@ -22,14 +22,20 @@
           </div>
         </div>
       </div>
-      <div id="work-dynamic-2-2"></div>
+      <div id="work-dynamic-2-2">
+        <Workbench/>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import Workbench from '@/components/Workbench'
 export default {
-  name: 'WorkDynamic'
+  name: 'WorkDynamic',
+  components: {
+    Workbench
+  }
 }
 </script>
 
@@ -140,7 +146,7 @@ export default {
   }
   #work-dynamic-2-2 {
     width: 244px;
-    height: 470px;
+    height: 384px;
     background: #FFFFFF;
   }
 </style>

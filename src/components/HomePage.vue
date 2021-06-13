@@ -24,46 +24,7 @@
         </div>
       </div>
       <div id="home-page-2-3">
-        <div id="home-page-2-3-1">
-          <div id="home-page-2-3-1-1">
-            <img src="../assets/工作台-icon.png"/>
-          </div>
-          <div id="home-page-2-3-1-2">
-            <span>工作台</span>
-          </div>
-          <div id="home-page-2-3-1-3">
-            <span>进入</span>
-          </div>
-          <div id="home-page-2-3-1-4">
-            <img src="../assets/工作台-箭头.png"/>
-          </div>
-        </div>
-        <div id="home-page-2-3-2">
-          <div class="home-page-2-3-2-1">
-            <img class="home-page-2-3-2-1-1" src="../assets/信息审批.png">
-            <span class="span-1">信息审批</span>
-            <span class="span-2">{{ informationNum }}</span>
-            <span class="span-3">条</span>
-          </div>
-          <div class="home-page-2-3-2-1">
-            <img class="home-page-2-3-2-1-1" src="../assets/报告审批.png">
-            <span class="span-1">报告审批</span>
-            <span class="span-2">{{ reportNum }}</span>
-            <span class="span-3">条</span>
-          </div>
-          <div class="home-page-2-3-2-1">
-            <img class="home-page-2-3-2-1-1" src="../assets/谏言处置.png">
-            <span class="span-1">谏言处置</span>
-            <span class="span-2">{{ admonishNum }}</span>
-            <span class="span-3">条</span>
-          </div>
-        </div>
-        <div id="home-page-2-3-3">
-          <img src="../assets/国家短缺药品清单.png"/>
-        </div>
-        <div id="home-page-2-3-">
-          <img src="../assets/省级短缺药品清单.png"/>
-        </div>
+        <Workbench/>
       </div>
     </div>
     <div id="home-page-3">
@@ -151,17 +112,16 @@
 <script>
 import WorkDynamicList from '@/components/WorkDynamicList'
 import Table from '@/components/Table'
+import Workbench from '@/components/Workbench'
 export default {
   name: 'HomePage',
   components: {
     WorkDynamicList,
-    Table
+    Table,
+    Workbench
   },
   data () {
     return {
-      informationNum: '8406',
-      reportNum: '006',
-      admonishNum: '006',
       medicinesTableTitle: ['药品名称', '剂型', '生产企业', '地域'],
       medicinesTableList: [
         ['阿莫西林', '片剂', '兰州佛慈制药厂', '兰州'],
@@ -271,9 +231,6 @@ export default {
   }
   #home-page-2-3 {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     left: 15px;
     width: 244px;
     height: 384px;
