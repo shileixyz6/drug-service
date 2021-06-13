@@ -8,7 +8,20 @@
       </div>
     </div>
     <div id="work-dynamic-2">
-      <div id="work-dynamic-2-1"></div>
+      <div id="work-dynamic-2-1">
+        <div id="work-dynamic-2-1-1">
+          <div style="position: relative; left: 25px; top: 15px;">
+            <span id="work-dynamic-2-1-1-1">短缺药品行业</span>
+            <span id="work-dynamic-2-1-1-2">报告</span>
+          </div>
+        </div>
+        <div id="work-dynamic-2-1-2">
+          <div id="work-dynamic-2-1-2-1">
+          </div>
+          <div id="work-dynamic-2-1-2-2">
+          </div>
+        </div>
+      </div>
       <div id="work-dynamic-2-2"></div>
     </div>
   </div>
@@ -72,9 +85,58 @@ export default {
     top: 18px;
   }
   #work-dynamic-2-1 {
+    display: flex;
+    flex-direction: column;
     width: 933px;
     height: 841px;
     background: #FFFFFF;
+  }
+  #work-dynamic-2-1-1 {
+    display: flex;
+    flex-direction: row;
+  }
+  #work-dynamic-2-1-1-1 {
+    width: 108px;
+    height: 25px;
+    font-family: Helvetica;
+    font-size: 18px;
+    color: #1A65B9;
+    font-weight: 400;
+  }
+  #work-dynamic-2-1-1-2 {
+    position: relative;
+    left: 8px;
+    top: -3px;
+    width: 26px;
+    height: 18px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #333333;
+    font-weight: 400;
+  }
+  #work-dynamic-2-1-2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    left: 25px;
+    top: 11px;
+  }
+  #work-dynamic-2-1-2-1 {
+    position: relative;
+    display: flex;
+    top: 10px;
+    width: 145px;
+    height: 1px;
+    background: #1A65B9;
+  }
+  #work-dynamic-2-1-2-2 {
+    position: relative;
+    display: flex;
+    left: 2px;
+    top: 10px;
+    width: 735px;
+    height: 1px;
+    background: #D8D8D8;
   }
   #work-dynamic-2-2 {
     width: 244px;
