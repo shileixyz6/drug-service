@@ -93,25 +93,100 @@
     </div>
     <div id="home-page-5">
       <div class="home-page-5">
+        <div class="home-page-5-1">
+          <span class="home-page-5-1-1">短缺</span>
+          <span class="home-page-5-1-2">药品</span>
+          <span class="home-page-5-1-3">更多>></span>
+        </div>
+        <div class="home-page-5-2">
+          <div class="home-page-5-2-1">
+          </div>
+          <div class="home-page-5-2-2">
+          </div>
+        </div>
+        <div class="home-page-5-2-3">
+          <Table :titles="medicinesTableTitle" :content="medicinesTableList"/>
+        </div>
       </div>
-      <div class="home-page-5"></div>
-      <div class="home-page-5"></div>
+      <div class="home-page-5">
+        <div class="home-page-5">
+          <div class="home-page-5-1">
+            <span class="home-page-5-1-1">联络</span>
+            <span class="home-page-5-1-2">单位</span>
+            <span class="home-page-5-1-3">更多>></span>
+          </div>
+          <div class="home-page-5-2">
+            <div class="home-page-5-2-1">
+            </div>
+            <div class="home-page-5-2-2">
+            </div>
+          </div>
+          <div class="home-page-5-2-3">
+            <Table :titles="departmentTableTitle" :content="departmentTableList"/>
+          </div>
+        </div>
+      </div>
+      <div class="home-page-5">
+        <div class="home-page-5">
+          <div class="home-page-5-1">
+            <span class="home-page-5-1-1">药企</span>
+            <span class="home-page-5-1-2">停产</span>
+            <span class="home-page-5-1-3">更多>></span>
+          </div>
+          <div class="home-page-5-2">
+            <div class="home-page-5-2-1">
+            </div>
+            <div class="home-page-5-2-2">
+            </div>
+          </div>
+          <div class="home-page-5-2-3">
+            <Table :titles="discontinuedTableTitle" :content="discontinuedTableList"/>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import WorkDynamicList from '@/components/WorkDynamicList'
+import Table from '@/components/Table'
 export default {
   name: 'HomePage',
   components: {
-    WorkDynamicList
+    WorkDynamicList,
+    Table
   },
   data () {
     return {
       informationNum: '8406',
       reportNum: '006',
-      admonishNum: '006'
+      admonishNum: '006',
+      medicinesTableTitle: ['药品名称', '剂型', '生产企业', '地域'],
+      medicinesTableList: [
+        ['阿莫西林', '片剂', '兰州佛慈制药厂', '兰州'],
+        ['阿莫西林', '片剂', '兰州佛慈制药厂', '兰州'],
+        ['阿莫西林', '片剂', '兰州佛慈制药厂', '兰州'],
+        ['阿莫西林', '片剂', '兰州佛慈制药厂', '兰州'],
+        ['阿莫西林', '片剂', '兰州佛慈制药厂', '兰州']
+      ],
+      departmentTableTitle: ['机构单位', '部门', '姓名', '联系方式'],
+      departmentTableList: [
+        ['卫健委', '部门', '吴文德', '18919909090'],
+        ['卫健委', '部门', '吴文德', '18919909090'],
+        ['卫健委', '部门', '吴文德', '18919909090'],
+        ['卫健委', '部门', '吴文德', '18919909090'],
+        ['卫健委', '部门', '吴文德', '18919909090']
+      ],
+      discontinuedTableTitle: ['药品名称', '剂型', '生产企业', '停产时间'],
+      discontinuedTableList: [
+        ['阿莫西林', '片剂', '兰州佛慈制药厂', '2020.08.02'],
+        ['阿莫西林', '片剂', '兰州佛慈制药厂', '2020.08.02'],
+        ['阿莫西林', '片剂', '兰州佛慈制药厂', '2020.08.02'],
+        ['阿莫西林', '片剂', '兰州佛慈制药厂', '2020.08.02'],
+        ['阿莫西林', '片剂', '兰州佛慈制药厂', '2020.08.02']
+      ]
+
     }
   }
 }
@@ -336,9 +411,82 @@ export default {
     top: 90px;
   }
   .home-page-5 {
+    display: flex;
+    flex-direction: column;
     width: 386px;
     height: 330px;
     background: #FFFFFF;
+  }
+  .home-page-5-1 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    top: 15px;
+  }
+  .home-page-5-1-1 {
+    position: relative;
+    left: 25px;
+    width: 36px;
+    height: 25px;
+    font-family: Helvetica;
+    font-size: 18px;
+    color: #1A65B9;
+    text-align: center;
+    font-weight: 400;
+  }
+  .home-page-5-1-2 {
+    position: relative;
+    left: 30px;
+    top: 3px;
+    width: 26px;
+    height: 18px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #333333;
+    text-align: center;
+    font-weight: 400;
+  }
+  .home-page-5-1-3 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    left: 265px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #333333;
+    text-align: center;
+    font-weight: 400;
+  }
+  .home-page-5-2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    top: 11px;
+  }
+  .home-page-5-2-1 {
+    position: relative;
+    display: flex;
+    left: 25px;
+    top: 10px;
+    width: 70px;
+    height: 1px;
+    background: #1A65B9;
+  }
+  .home-page-5-2-2 {
+    position: relative;
+    display: flex;
+    left: 28px;
+    top: 10px;
+    width: 272px;
+    height: 1px;
+    background: #D8D8D8;
+  }
+  .home-page-5-2-3 {
+    position: relative;
+    left: 20px;
+    top: 30px;
+    width: 351px;
+    height: 274px;
   }
   #work {
     position: relative;
