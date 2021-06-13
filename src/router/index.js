@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import HomePage from '@/components/HomePage'
+import HomePage from '@/views/HomePage'
 import WorkDynamic from '@/components/WorkDynamic'
 import ReportInfo from '@/components/ReportInfo'
 import ShortageList from '@/components/ShortageList'
