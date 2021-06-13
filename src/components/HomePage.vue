@@ -198,6 +198,7 @@ export default {
     display: flex;
     flex-direction: column;
     width: 1200px;
+    height: 1405px;
   }
   #home-page-1 {
     position: relative;

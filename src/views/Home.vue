@@ -52,13 +52,12 @@ export default {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 1400px;
+    height: auto;
     background-color: #f2f2f2;
   }
   #line {
     position: relative;
     background-color: #2B5AAA;
-    /*top: 0px;*/
     width: 100%;
     height: 2px;
   }
